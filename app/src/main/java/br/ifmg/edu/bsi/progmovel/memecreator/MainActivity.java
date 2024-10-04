@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.PointF;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,15 +31,12 @@ import androidx.activity.result.contract.ActivityResultContracts.StartActivityFo
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.exifinterface.media.ExifInterface;
 
 import java.io.BufferedOutputStream;
 import java.io.FileDescriptor;
 import java.io.IOException;
 
-/**
- * Activity que cria uma imagem com um texto e imagem de fundo.
- */
+
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
